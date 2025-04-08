@@ -180,7 +180,6 @@ public final class Tools {
         DIR_CACHE = ctx.getCacheDir();
         DIR_DATA = ctx.getFilesDir().getParent();
         MULTIRT_HOME = DIR_DATA + "/runtimes";
-        DIR_ACCOUNT_NEW = DIR_DATA + "/accounts";
         NATIVE_LIB_DIR = ctx.getApplicationInfo().nativeLibraryDir;
     }
 
@@ -193,6 +192,7 @@ public final class Tools {
         initEarlyConstants(ctx);
         DIR_GAME_HOME = getPojavStorageRoot(ctx).getAbsolutePath();
         DIR_GAME_NEW = DIR_GAME_HOME + "/.minecraft";
+        DIR_ACCOUNT_NEW = DIR_GAME_HOME + "/accounts";
         DIR_HOME_VERSION = DIR_GAME_NEW + "/versions";
         DIR_HOME_LIBRARY = DIR_GAME_NEW + "/libraries";
         DIR_HOME_CRASH = DIR_GAME_NEW + "/crash-reports";
